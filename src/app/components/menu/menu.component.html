@@ -1,0 +1,39 @@
+<button mat-button [matMenuTriggerFor]="mainMenu">Manage</button>
+
+<mat-menu #mainMenu="matMenu">
+    @if(isManager){
+    <button mat-menu-item [matMenuTriggerFor]="userMenu">
+        <mat-icon>person</mat-icon>
+        <span>Users</span>
+    </button>
+
+    <button mat-menu-item [matMenuTriggerFor]="categoryMenu">
+        <mat-icon>category</mat-icon>
+        <span>Categories</span>
+    </button>
+    }
+    <!-- <ng-container *ngIf="isManager">
+        <button mat-menu-item [matMenuTriggerFor]="userMenu">
+            <mat-icon>person</mat-icon>
+            <span>Users</span>
+        </button>
+
+        <button mat-menu-item [matMenuTriggerFor]="categoryMenu">
+            <mat-icon>category</mat-icon>
+            <span>Categories</span>
+        </button>
+    </ng-container> -->
+</mat-menu>
+
+<!-- User submenu -->
+<mat-menu #userMenu="matMenu">
+    <button mat-menu-item (click)="addUser()">Add User</button>
+    <button mat-menu-item (click)="updateUser()">Update User</button>
+    <button mat-menu-item (click)="deleteUser()">Delete User</button>
+</mat-menu>
+
+<!-- Category submenu -->
+<mat-menu #categoryMenu="matMenu">
+    <button mat-menu-item (click)="addCategory()">Add Category</button>
+    <button mat-menu-item (click)="updateCategory()">Update Category</button>
+</mat-menu>

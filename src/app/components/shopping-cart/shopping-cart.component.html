@@ -1,0 +1,28 @@
+@if(cartProds.length == 0){
+    <p>Your cart is empty</p>
+    <a (click)="shop()">Continue Shopping</a>
+}
+
+@else{
+    <p>Subtotal (${{cartProds.length}} items): total cost</p>
+    <button mat-flat-button>Proceed to checkout</button>
+    @for(i of cartProds; track i.id){
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <p>title</p>
+                <p>cost</p>
+            </div>
+            <div>
+                <div>
+                    <button>-</button>
+                    <label for="">amount wanted</label>
+                    <button>+</button>
+                </div>
+                <button>delete</button>
+            </div>
+        </div>
+    }
+}

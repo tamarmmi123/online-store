@@ -1,0 +1,87 @@
+<mat-tab-group class="navContainer" (selectedIndexChange)="onTabChange($event)">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <!-- <button mat-icon-button matBadge="{{ cartCount }}" matBadgeColor="primary" matBadgeOverlap="true"
+        aria-label="Cart">
+        <mat-icon>shopping_cart</mat-icon>
+      </button> -->
+      <mat-icon matBadge="{{ cartCount }}" matBadgeColor="accent">shopping_cart</mat-icon>
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <div class="user-hover-wrapper" (mouseenter)="openUserMenu()" (mouseleave)="closeUserMenuWithDelay()">
+        <button mat-button [matMenuTriggerFor]="userMenu" #userMenuTrigger="matMenuTrigger"
+          (click)="$event.stopPropagation()">
+          <mat-icon>account_circle</mat-icon>
+          <ng-container *ngIf="(currentUser$ | async) as user; else guest">
+            {{ user.firstName }}
+          </ng-container>
+          <ng-template #guest>Guest</ng-template>
+        </button>
+      </div>
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab label="Home"></mat-tab>
+  <mat-tab label="View Items"></mat-tab>
+</mat-tab-group>
+
+<!-- User Menu -->
+<mat-menu #userMenu="matMenu" [overlapTrigger]="false" (mouseenter)="cancelUserMenuClose()"
+  (mouseleave)="closeUserMenu()">
+  <ng-container *ngIf="(currentUser$ | async) as user; else guestMenu">
+<button mat-menu-item (click)="navigateToEdit(user.id)">
+      <mat-icon>edit</mat-icon> Edit Profile
+    </button>
+    <button mat-menu-item (click)="confirmLogout()">
+      <mat-icon>logout</mat-icon> Logout
+    </button>
+  </ng-container>
+
+  <ng-template #guestMenu>
+    <button mat-menu-item (click)="navigate('/login')">
+      <mat-icon>login</mat-icon> Login
+    </button>
+    <button mat-menu-item (click)="navigate('/register')">
+      <mat-icon>person_add</mat-icon> Register
+    </button>
+  </ng-template>
+</mat-menu>
+
+<!-- Manager Button with Submenus -->
+<button mat-button [matMenuTriggerFor]="managerMenu">
+  <mat-icon>manage_accounts</mat-icon>
+  <span>Manage</span>
+</button>
+
+<mat-menu #managerMenu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="userSubMenu">
+    <mat-icon>person</mat-icon> Users
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="categorySubMenu">
+    <mat-icon>category</mat-icon> Categories
+  </button>
+</mat-menu>
+
+<mat-menu #userSubMenu="matMenu">
+  <button mat-menu-item (click)="navigate('/add-user')">
+    <mat-icon>person_add</mat-icon> Add User
+  </button>
+  <button mat-menu-item (click)="navigate('/edit-user')">
+    <mat-icon>edit</mat-icon> Update User
+  </button>
+  <button mat-menu-item (click)="navigate('/delete-user')">
+    <mat-icon>delete</mat-icon> Delete User
+  </button>
+</mat-menu>
+
+<mat-menu #categorySubMenu="matMenu">
+  <button mat-menu-item (click)="navigate('/add-category')">
+    <mat-icon>add</mat-icon> Add Category
+  </button>
+  <button mat-menu-item (click)="navigate('/edit-category')">
+    <mat-icon>edit</mat-icon> Update Category
+  </button>
+</mat-menu>
