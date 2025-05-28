@@ -74,4 +74,15 @@ export class UserComponent {
       });
     }
   }
+
+//   onUpdate() {
+//   if (this.editableUser) {
+//     console.log('About to update user:', this.editableUser);
+//     this.user.updateUser(this.editableUser).subscribe({
+//       next: (res) => console.log('Update success:', res),
+//       error: (err) => console.error('Update error:', err),
+//       complete: () => console.log('Update request completed')
+//     });
+//   }
+// }
 }

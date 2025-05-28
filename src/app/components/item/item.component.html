@@ -2,7 +2,6 @@
     <div class="product-card-clickable" (click)="navigateToProduct($event)">
 
         <div>
-            <!-- <img [src]="product.imgSource" alt="Product Image" class="product-image" /> -->
             <img [src]="'imgSrc/'+product.imgSource" class="product-image" alt="{{product.productName}}" />
         </div>
         <div>
@@ -12,17 +11,9 @@
         </div>
     </div>
 
-    <!-- <div class="product-card"> -->
-    <!-- <div class="quantity-selector">
-            <button class="quantity-btn" (click)="decreaseQuantity()">-</button>
-            <span class="quantity-display">{{ quantity }}</span>
-            <button class="quantity-btn" (click)="increaseQuantity()">+</button>
-        </div> -->
-
     <button class="add-to-cart" (click)="addToCart()" [disabled]="!isLoggedIn()">
         <span class="cart-icon">🛒</span> Add To Cart
     </button>
-    <!-- </div> -->
 
     @if(getUserRole() == "manager"){
     <button>update</button>

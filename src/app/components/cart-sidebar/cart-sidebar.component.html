@@ -1,0 +1,8 @@
+<div class="cart-sidebar">
+    <ng-container *ngIf="isVisible()">
+        <div *ngFor="let item of cartItems$ | async" class="cart-item">
+            <img src="imgSrc/{{item.product.imgSource}}" alt="">
+            <p>{{item.product.cost | currency}} </p>
+        </div>
+    </ng-container>
+</div>

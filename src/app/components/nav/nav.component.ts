@@ -36,7 +36,16 @@ export class NavComponent {
   }
 
   onTabChange(index: number) {
-    const routes = ['/shopping-cart', '/user', '/home', '/products'];
+    const user = this.user.getCurrentUser();
+
+    const routes = [
+      '/home',
+      '/products',
+      user ? `/users/${user.id}` : '/login',
+      user ? `/orders/${user.id}` : '/login',
+      '/shopping-cart'
+    ];
+    console.log('Navigating to:', routes[index]);
     if (index < routes.length) {
       this.router.navigate([routes[index]]);
     }
@@ -47,20 +56,10 @@ export class NavComponent {
   }
 
   navigateToEdit(id: number) {
-    this.router.navigate(['/update-user', id]);
+    this.router.navigate(['/users', id]);
   }
 
 
-  confirmLogout() {
-    const dialogRef = this.dialog.open(ConfirmDialogComponent);
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.user.logout();
-        this.router.navigate(['/login']);
-      }
-    });
-  }
 
   openUserMenu() {
     this.userMenuTrigger.openMenu();
@@ -79,4 +78,21 @@ export class NavComponent {
   cancelUserMenuClose() {
     clearTimeout(this.closeTimeout);
   }
+
+  confirmLogout(): void {
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      data: {
+        title: 'Confirm Logout',
+        message: 'Are you sure you want to log out?'
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.user.logout();
+        this.router.navigate(['/login']);
+      }
+    });
+  }
+
 }

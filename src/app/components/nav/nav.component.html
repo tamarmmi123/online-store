@@ -1,13 +1,12 @@
+<!-- <div class="nav"> -->
+<!-- <div>
+    <img src="imgSrc/logo.png" alt="logo" />
+  </div>
+  <div> -->
 <mat-tab-group class="navContainer" (selectedIndexChange)="onTabChange($event)">
-  <mat-tab>
-    <ng-template mat-tab-label>
-      <!-- <button mat-icon-button matBadge="{{ cartCount }}" matBadgeColor="primary" matBadgeOverlap="true"
-        aria-label="Cart">
-        <mat-icon>shopping_cart</mat-icon>
-      </button> -->
-      <mat-icon matBadge="{{ cartCount }}" matBadgeColor="accent">shopping_cart</mat-icon>
-    </ng-template>
-  </mat-tab>
+
+  <mat-tab label="Home"></mat-tab>
+  <mat-tab label="View Items"></mat-tab>
 
   <mat-tab>
     <ng-template mat-tab-label>
@@ -23,16 +22,23 @@
       </div>
     </ng-template>
   </mat-tab>
-
-  <mat-tab label="Home"></mat-tab>
-  <mat-tab label="View Items"></mat-tab>
+  <mat-tab label="Orders"></mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <!-- <button mat-icon-button matBadge="{{ cartCount }}" matBadgeColor="primary" matBadgeOverlap="true"
+            aria-label="Cart">
+            <mat-icon>shopping_cart</mat-icon>
+          </button> -->
+      <mat-icon matBadge="{{ cartCount }}" matBadgeColor="accent">shopping_cart</mat-icon>
+    </ng-template>
+  </mat-tab>
 </mat-tab-group>
 
 <!-- User Menu -->
 <mat-menu #userMenu="matMenu" [overlapTrigger]="false" (mouseenter)="cancelUserMenuClose()"
   (mouseleave)="closeUserMenu()">
   <ng-container *ngIf="(currentUser$ | async) as user; else guestMenu">
-<button mat-menu-item (click)="navigateToEdit(user.id)">
+    <button mat-menu-item (click)="navigateToEdit(user.id)">
       <mat-icon>edit</mat-icon> Edit Profile
     </button>
     <button mat-menu-item (click)="confirmLogout()">
@@ -49,6 +55,7 @@
     </button>
   </ng-template>
 </mat-menu>
+
 
 <!-- Manager Button with Submenus -->
 <button mat-button [matMenuTriggerFor]="managerMenu">
@@ -85,3 +92,5 @@
     <mat-icon>edit</mat-icon> Update Category
   </button>
 </mat-menu>
+<!-- </div> -->
+<!-- </div> -->

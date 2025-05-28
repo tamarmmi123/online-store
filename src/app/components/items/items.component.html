@@ -2,6 +2,7 @@
 <p>No products found</p>
 }
 @else{
+<app-search-filter (categorySelected)="filterByCategory($event)"></app-search-filter>
 <div class="items-container">
      <app-item *ngFor="let item of items" [product]="item" class="clickable"></app-item>
 

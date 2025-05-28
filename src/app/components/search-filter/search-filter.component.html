@@ -1,0 +1,10 @@
+<!-- filter -->
+<mat-form-field appearance="fill">
+  <mat-label>Filter by category</mat-label>
+  <mat-select (selectionChange)="onSelectChange($event.value)">
+    <mat-option [value]="''">All Categories</mat-option>
+    <mat-option *ngFor="let category of categories" [value]="category.name">
+      {{ category.name }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
