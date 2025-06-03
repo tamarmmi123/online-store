@@ -1,0 +1,64 @@
+<div class="checkout-container mat-elevation-z4">
+  <h2 class="mat-headline-5 mb-2">Checkout</h2>
+
+  <mat-card class="mb-3">
+    <mat-card-content>
+      <p><strong>Shipping Address:</strong> {{ user?.address }}</p>
+      <button mat-stroked-button color="accent" (click)="changeAddress()">
+        Change Address
+      </button>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="mb-3">
+    <mat-card-content class="payment-info">
+      <h3 class="mat-title">Payment Info</h3>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Card Number</mat-label>
+        <input required matInput minlength="19" maxlength="19" placeholder="1234 5678 9012 3456"
+          [value]="cardNumber | cardNumberFormat" (input)="onCardNumberInput($event)" />
+      </mat-form-field>
+
+      <div class="half-fields">
+        <mat-form-field appearance="fill" class="half-width">
+          <mat-label>Expiry Month</mat-label>
+          <mat-select required [(ngModel)]="expiryMonth">
+            <mat-option *ngFor="let month of [1,2,3,4,5,6,7,8,9,10,11,12]" [value]="month">
+              {{ month < 10 ? '0' + month : month }} </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="half-width">
+          <mat-label>Expiry Year</mat-label>
+          <mat-select required [(ngModel)]="expiryYear">
+            <mat-option *ngFor="let year of years" [value]="year">
+              {{ year }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <mat-form-field appearance="fill" class="half-width">
+        <mat-label>CVV</mat-label>
+        <input matInput placeholder="CVV" minlength="3" maxlength="4" [(ngModel)]="cvv" type="password" />
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="mb-3">
+    <mat-card-content>
+      <h3 class="mat-title">Order Summary</h3>
+      <p *ngFor="let item of cartItems">
+        {{ item.product.productName }} - {{ item.product.cost | currency:'ILS' }}
+      </p>
+      <p><strong>Total: {{ total | currency:'ILS' }}</strong></p>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="actions">
+    <button mat-raised-button color="primary" (click)="placeOrder()" [disabled]="!isPaymentInfoValid()">
+      Place Order
+    </button>
+  </div>
+</div>

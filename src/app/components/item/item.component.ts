@@ -20,10 +20,6 @@ export class ItemComponent {
     this.cartService.addToCart(this.product, this.quantity);
   }
 
-  ngOnInit() {
-    console.log('Product:', this.product);
-  }
-
   navigateToProduct(event: MouseEvent) {
     const target = event.target as HTMLElement;
     if (target.closest('button')) {

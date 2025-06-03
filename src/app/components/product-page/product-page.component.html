@@ -1,21 +1,20 @@
 <div *ngIf="product" class="page-container">
-  <div>
-    <img [src]="'imgSrc/'+product.imgSource" class="product-image" alt="{{product.productName}}" />
+  <div class="image-container">
+    <img [src]="'imgSrc/' + product.imgSource" class="product-image" alt="{{ product.productName }}" />
   </div>
-  <div>
-    <div>
+  <div class="details-container">
+    <div class="product-info">
       <h1>{{ product.productName }}</h1>
       <p>{{ product.description }}</p>
-      <h2>{{ product.cost | currency }}</h2>
+      <h2>{{ product.cost | currency:'ILS' }}</h2>
     </div>
     <div class="quantity-selector">
       <button class="quantity-btn" (click)="decreaseQuantity()">-</button>
       <span class="quantity-display">{{ quantity }}</span>
       <button class="quantity-btn" (click)="increaseQuantity()">+</button>
     </div>
-
-    <button class="add-to-cart" (click)="addToCart()" [disabled]="!isLoggedIn()">
-      <span class="cart-icon">🛒</span> Add To Cart
+    <button mat-raised-button color="primary" class="add-to-cart" (click)="addToCart()" [disabled]="!isLoggedIn()">
+      <mat-icon>add_shopping_cart</mat-icon> Add To Cart
     </button>
   </div>
 </div>

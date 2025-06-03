@@ -11,7 +11,7 @@ import { UserService } from "../../services/user.service";
 import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { UpdateErrorDialogComponent } from '../update-error-dialog/update-error-dialog.component';
+import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
 
 
 @Component({
@@ -60,29 +60,38 @@ export class UserComponent {
   }
 
   onUpdate() {
-    if (this.editableUser) {
-      this.user.updateUser(this.editableUser).subscribe({
-        next: (updatedUser) => {
-          this.user.setCurrentUser(updatedUser);
-          alert('Profile updated!');
-          this.router.navigate(['/']);
-        },
-        error: (err) => {
-          console.error(err);
-          this.dialog.open(UpdateErrorDialogComponent);
-        }
-      });
+    if (!this.editableUser) {
+      console.error('No user to update.');
+      return;
     }
-  }
 
-//   onUpdate() {
-//   if (this.editableUser) {
-//     console.log('About to update user:', this.editableUser);
-//     this.user.updateUser(this.editableUser).subscribe({
-//       next: (res) => console.log('Update success:', res),
-//       error: (err) => console.error('Update error:', err),
-//       complete: () => console.log('Update request completed')
-//     });
-//   }
-// }
+    this.editableUser.role = this.editableUser.role || 'user';
+
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      data: {
+        title: 'Confirm Update',
+        message: 'Are you sure you want to update your profile?'
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.user.updateUser(this.editableUser!).subscribe({
+          next: (updatedUser) => {
+            this.user.setCurrentUser(updatedUser);
+            this.router.navigate(['/']);
+          },
+          error: (err) => {
+            console.error('Error updating user:', err);
+            this.dialog.open(ConfirmDialogComponent, {
+              data: {
+                title: 'Update Failed',
+                message: 'An error occurred while updating the profile. Please try again.'
+              }
+            });
+          }
+        });
+      }
+    });
+  }
 }

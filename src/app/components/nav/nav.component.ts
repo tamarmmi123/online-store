@@ -42,10 +42,9 @@ export class NavComponent {
       '/home',
       '/products',
       user ? `/users/${user.id}` : '/login',
-      user ? `/orders/${user.id}` : '/login',
+      user ? `/orders/by-userId/${user.id}` : '/login',
       '/shopping-cart'
     ];
-    console.log('Navigating to:', routes[index]);
     if (index < routes.length) {
       this.router.navigate([routes[index]]);
     }
@@ -58,8 +57,6 @@ export class NavComponent {
   navigateToEdit(id: number) {
     this.router.navigate(['/users', id]);
   }
-
-
 
   openUserMenu() {
     this.userMenuTrigger.openMenu();

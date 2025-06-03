@@ -15,9 +15,12 @@ import { CategoryService } from '../../services/category.service';
 })
 export class ItemsComponent implements OnInit {
   allItems: Product[] = [];
-  items: Product[] = []; selectedCategoryName: string = '';
+  items: Product[] = [];
+  selectedCategoryName: string = '';
   filteredProducts: Product[] = [];
   categories: string[] = [];
+
+  searchTerm: string = '';
 
   constructor(private itemsService: ItemsService, private categoryService: CategoryService) { }
 
@@ -58,12 +61,40 @@ export class ItemsComponent implements OnInit {
 
   filterByCategory(categoryName: string): void {
     if (!categoryName) {
-      this.items = this.allItems; // Show all if no filter
+      this.items = this.allItems;
       return;
     }
 
     this.categoryService.getCategoryByName(categoryName).subscribe(category => {
       this.items = this.allItems.filter(p => p.categoryId === category.id);
     });
+  }
+
+  filterByPrice(filters: { minPrice: number | null; maxPrice: number | null }): void {
+    this.items = this.allItems.filter(item => {
+      const matchesMin = filters.minPrice == null || item.cost >= filters.minPrice;
+      const matchesMax = filters.maxPrice == null || item.cost <= filters.maxPrice;
+      return matchesMin && matchesMax;
+    });
+  }
+
+  onSortOrderChanged(order: 'asc' | 'desc'): void {
+    if (!order) return;
+
+    this.items.sort((a, b) => {
+      return order === 'asc' ? a.cost - b.cost : b.cost - a.cost;
+    });
+  }
+
+
+  onSearchChanged(term: string): void {
+    this.searchTerm = term.toLowerCase();
+
+    this.items = this.allItems.filter(p =>
+    (!this.searchTerm ||
+      p.productName.toLowerCase().includes(this.searchTerm) ||
+      p.description?.toLowerCase().includes(this.searchTerm)
+    )
+    );
   }
 }

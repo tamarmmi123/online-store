@@ -12,7 +12,29 @@ export class UserService {
   private currentUser = new BehaviorSubject<User | null>(null);
   currentUser$ = this.currentUser.asObservable();
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+    const token = this.getToken();
+    if (token) {
+      const user = this.decodeTokenToUser(token);
+      this.currentUser.next(user);
+    }
+  }
+
+  private decodeTokenToUser(token: string): User {
+    const decoded: any = jwtDecode(token);
+    return {
+      id: +decoded['id'],
+      userName: decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'],
+      role: decoded['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'],
+      firstName: decoded['firstName'],
+      lastName: decoded['lastName'],
+      email: decoded['email'],
+      phoneNumber: decoded['phoneNumber'],
+      address: decoded['address'],
+      password: '',
+      orders: []
+    };
+  }
 
   register(user: User): Observable<User> {
     return this.httpClient.post<LoginResponse>(`${this.URL}/users`, user).pipe(
@@ -31,18 +53,14 @@ export class UserService {
   login(userName: string, password: string): Observable<User> {
     const body = { userName, password };
 
-    return this.httpClient
-      .post<LoginResponse>(`${this.URL}/login`, body)
-      .pipe(
-        tap(response => {
-          localStorage.setItem('token', response.token);
-          this.currentUser.next(response.user);
-
-          const decodedToken: any = jwtDecode(response.token);
-        }),
-        map(response => response.user)
-
-      );
+    return this.httpClient.post<LoginResponse>(`${this.URL}/login`, body).pipe(
+      tap(response => {
+        localStorage.setItem('token', response.token);
+        const user = this.decodeTokenToUser(response.token);
+        this.currentUser.next(user);
+      }),
+      map(response => response.user)
+    );
   }
 
   getUserById(id: number): Observable<User> {
@@ -58,27 +76,16 @@ export class UserService {
   }
 
   getCurrentUser(): User | null {
-    const token = this.getToken();
-    if (!token) return null;    
-
-    const decoded: any = jwtDecode(token);
-    return {
-      id: +decoded['id'],
-      userName: decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'],
-      password: '',
-      firstName: decoded['firstName'],
-      lastName: decoded['lastName'],
-      phoneNumber: decoded['phoneNumber'],
-      address: decoded['address'],
-      email: decoded['email'],
-      orders: [],
-      role: decoded['http://schemas.microsoft.com/ws/2008/06/identity/claims/role']
-    };
+    return this.currentUser.value;
   }
 
   setCurrentUser(user: User) {
     localStorage.setItem('user', JSON.stringify(user));
-    this.currentUser.next({...user});
+    this.currentUser.next({ ...user });
+  }
+
+  getUserRole(): string | null {
+    return this.getCurrentUser()?.role ?? null;
   }
 
   logout(): void {

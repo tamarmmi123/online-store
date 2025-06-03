@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, output, Output } from '@angular/core';
 import { Product } from '../../classes/product';
 import { Category } from '../../classes/category';
 import { ItemsService } from '../../services/items.service';
@@ -8,10 +8,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { NgFor } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-search-filter',
-  imports: [FormsModule, MatFormFieldModule, MatSelectModule, MatInputModule, NgFor],
+  imports: [FormsModule, MatFormFieldModule, MatSelectModule, MatInputModule, MatIconModule, NgFor],
   templateUrl: './search-filter.component.html',
   styleUrl: './search-filter.component.scss'
 })
@@ -20,7 +21,22 @@ export class SearchFilterComponent {
   filteredProducts: Product[] = [];
   categories: Category[] = [];
   selectedCategoryId: number = 0;
+  selectedCategory: string | null = null;
   @Output() categorySelected = new EventEmitter<string>();
+
+  @Output() filtersChanged = new EventEmitter<{
+    minPrice: number | null;
+    maxPrice: number | null;
+  }>();
+  minPrice: number | null = null;
+  maxPrice: number | null = null;
+
+  @Output() sortOrderChanged = new EventEmitter<'asc' | 'desc'>();
+  sortOrder: 'asc' | 'desc' | null = null;
+
+  @Output() searchChanged = new EventEmitter<string>();
+
+  searchQuery: string = '';
 
   constructor(
     private productService: ItemsService,
@@ -39,6 +55,7 @@ export class SearchFilterComponent {
   }
 
   onSelectChange(name: string) {
+    this.selectedCategory = name;
     this.categorySelected.emit(name);
   }
 
@@ -50,5 +67,22 @@ export class SearchFilterComponent {
         p => p.categoryId === this.selectedCategoryId
       );
     }
+  }
+
+  emitFilters(): void {
+    this.filtersChanged.emit({
+      minPrice: this.minPrice,
+      maxPrice: this.maxPrice
+    });
+  }
+
+  onSortOrderChange(): void {
+    if (this.sortOrder) {
+      this.sortOrderChanged.emit(this.sortOrder);
+    }
+  }
+
+  onSearchChange(): void {
+    this.searchChanged.emit(this.searchQuery);
   }
 }

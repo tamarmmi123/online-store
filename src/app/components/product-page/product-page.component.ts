@@ -5,10 +5,11 @@ import { Product } from '../../classes/product';
 import { CommonModule, NgIf } from '@angular/common';
 import { UserService } from '../../services/user.service';
 import { CartService } from '../../services/cart.service';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-product-page',
-  imports: [NgIf, CommonModule],
+  imports: [NgIf, CommonModule, MatIcon],
   templateUrl: './product-page.component.html',
   styleUrls: ['./product-page.component.scss']
 })

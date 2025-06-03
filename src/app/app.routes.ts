@@ -8,17 +8,21 @@ import { AuthGuard } from './guards/auth.guard';
 import { ItemsComponent } from './components/items/items.component';
 import { UserComponent } from './components/user/user.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
+import { OrdersByIdComponent } from './components/orders-by-id/orders-by-id.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 
 export const routes: Routes = [
      { path: '', component: HomeComponent },
      { path: 'shopping-cart', component: ShoppingCartComponent },
-     { path: 'update-user/:id', component: UserComponent },
+     { path: 'users/:id', component: UserComponent },
      { path: 'login', component: LoginComponent },
      { path: 'register', component: RegisterComponent },
      { path: 'home', component: HomeComponent },
      { path: 'products', component: ItemsComponent },
      { path: 'product/:id', component: ProductPageComponent },
+     { path: 'checkout', component: CheckoutComponent },
+     { path: 'orders/by-userId/:id', component: OrdersByIdComponent },
      {
           path: 'categories',
           loadComponent: () => import('./components/categories/categories.component').then(m => m.CategoriesComponent),

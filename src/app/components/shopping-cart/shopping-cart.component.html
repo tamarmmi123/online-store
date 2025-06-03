@@ -4,9 +4,9 @@
 }
 @else {
 <p>
-    Subtotal ({{ getTotalItems() }} items): ${{ getTotalCost().toFixed(2) }}
+    Subtotal ({{ getTotalItems() }} items): {{ getTotalCost().toFixed(2) | currency:'ILS' }}
 </p>
-<button mat-flat-button>Proceed to checkout</button>
+<button mat-flat-button (click)="checkout()">Proceed to checkout</button>
 
 @for (i of cartItems; track i.product.id) {
 <div class="container">
@@ -17,9 +17,9 @@
         <div>
             <p>{{ i.product.productName }}</p>
             <p>{{ i.product.description }}</p>
-            <p>Price: ${{ i.product.cost }}</p>
+            <p>Price: {{ i.product.cost | currency:'ILS' }}</p>
             <p>Quantity: {{ i.quantity }}</p>
-            <p>Total: ${{ (i.product.cost * i.quantity).toFixed(2) }}</p>
+            <p>Total: {{ (i.product.cost * i.quantity).toFixed(2) | currency:'ILS' }}</p>
         </div>
         <div class="btns">
             <div class="quantity-selector">
