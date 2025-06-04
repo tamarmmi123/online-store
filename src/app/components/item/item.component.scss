@@ -8,7 +8,7 @@
   align-items: center;
 
   width: 300px;
-  height: 500px;
+  min-height: 450px;
   box-sizing: border-box;
 
   justify-content: space-between;
@@ -22,11 +22,10 @@
   p {
     min-height: 48px;
   }
-
 }
 
-.product-card{
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.product-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .quantity-selector {
@@ -90,4 +89,15 @@
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.manager-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+
+  button {
+    flex: 1 1 auto;
+  }
 }

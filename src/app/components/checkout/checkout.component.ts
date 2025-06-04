@@ -94,6 +94,7 @@ export class CheckoutComponent {
       }))
     };
 
+    console.log('ORDER PAYLOAD:', order);
     this.orderService.createOrder(order).subscribe({
       next: (createdOrder: any) => {
         console.log("SUCCESS RESPONSE:", createdOrder);

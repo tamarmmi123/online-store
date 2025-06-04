@@ -10,6 +10,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { CartService } from '../../services/cart.service';
+import { EditCategoryDialogComponent } from '../edit-category-dialog/edit-category-dialog.component';
+import { Category } from '../../classes/category';
+import { CategoryService } from '../../services/category.service';
+import { AddProductComponent } from '../add-product/add-product.component';
 
 @Component({
   selector: 'app-nav',
@@ -25,7 +29,7 @@ export class NavComponent {
 
   @ViewChild('userMenuTrigger') userMenuTrigger!: MatMenuTrigger;
 
-  constructor(public router: Router, public user: UserService, private dialog: MatDialog, private cartService: CartService) {
+  constructor(public router: Router, public user: UserService, private categoryService: CategoryService, private dialog: MatDialog, private cartService: CartService) {
     this.currentUser$ = this.user.currentUser$;
   }
 
@@ -92,4 +96,25 @@ export class NavComponent {
     });
   }
 
+  openAddCategoryDialog(): void {
+    const dialogRef = this.dialog.open(EditCategoryDialogComponent, {
+      width: '400px',
+      data: { id: 0, name: '', Products: [] }
+    });
+
+    dialogRef.afterClosed().subscribe((newCategory: Category | undefined) => {
+      console.log('Dialog result:', newCategory);
+      if (newCategory) {
+        this.categoryService.create(newCategory).subscribe(() => {
+          console.log('Category created successfully');
+        });
+      }
+    });
+  }
+
+  openAddProductDialog() {
+    this.dialog.open(AddProductComponent, {
+      width: '400px',
+    });
+  }
 }

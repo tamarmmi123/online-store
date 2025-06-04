@@ -4,15 +4,15 @@ import { MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/materia
 
 @Component({
   selector: 'app-confirm-dialog',
-  template: 
-  `
-    <h1 mat-dialog-title>Confirm Logout</h1>
-    <div mat-dialog-content>Are you sure you want to log out?</div>
-    <div mat-dialog-actions>
-      <button mat-button (click)="onCancel()">No</button>
-      <button mat-button color="warn" (click)="onConfirm()">Yes</button>
-    </div>
-  `,
+  // template: 
+  // `
+  //   <h1 mat-dialog-title>Confirm Logout</h1>
+  //   <div mat-dialog-content>Are you sure you want to log out?</div>
+  //   <div mat-dialog-actions>
+  //     <button mat-button (click)="onCancel()">No</button>
+  //     <button mat-button color="warn" (click)="onConfirm()">Yes</button>
+  //   </div>
+  // `,
   standalone: true,
   imports: [ MatDialogModule, MatButtonModule ],
   templateUrl: './confirm-dialog.component.html',

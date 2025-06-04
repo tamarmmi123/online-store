@@ -86,7 +86,6 @@ export class ItemsComponent implements OnInit {
     });
   }
 
-
   onSearchChanged(term: string): void {
     this.searchTerm = term.toLowerCase();
 
@@ -96,5 +95,11 @@ export class ItemsComponent implements OnInit {
       p.description?.toLowerCase().includes(this.searchTerm)
     )
     );
+  }
+
+  removeProductFromList(productId: number) {
+    console.log('Remove product ID:', productId); // 👈 check this logs
+    this.items = this.items.filter(p => p.id !== productId);
+    console.log('Updated product list:', this.items); // 👈 verify list is updated
   }
 }

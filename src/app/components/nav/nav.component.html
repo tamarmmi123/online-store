@@ -1,8 +1,6 @@
-<!-- <div class="nav"> -->
 <!-- <div>
-    <img src="imgSrc/logo.jpg" alt="logo" />
-  </div>
-  <div> -->
+  <img src="imgSrc/logo.jpg" alt="logo" />
+</div> -->
 <mat-tab-group class="navContainer" (selectedIndexChange)="onTabChange($event)">
 
   <mat-tab label="Home"></mat-tab>
@@ -25,10 +23,6 @@
   <mat-tab label="Orders"></mat-tab>
   <mat-tab>
     <ng-template mat-tab-label>
-      <!-- <button mat-icon-button matBadge="{{ cartCount }}" matBadgeColor="primary" matBadgeOverlap="true"
-            aria-label="Cart">
-            <mat-icon>shopping_cart</mat-icon>
-          </button> -->
       <mat-icon matBadge="{{ cartCount }}" matBadgeColor="accent">shopping_cart</mat-icon>
     </ng-template>
   </mat-tab>
@@ -58,39 +52,62 @@
 
 
 <!-- Manager Button with Submenus -->
+@if(user.isManager()){
+<!-- Top-level Manager Button -->
 <button mat-button [matMenuTriggerFor]="managerMenu">
   <mat-icon>manage_accounts</mat-icon>
   <span>Manage</span>
 </button>
 
+<!-- Manager Main Menu -->
 <mat-menu #managerMenu="matMenu">
   <button mat-menu-item [matMenuTriggerFor]="userSubMenu">
-    <mat-icon>person</mat-icon> Users
+    <mat-icon>person</mat-icon>
+    Users
   </button>
   <button mat-menu-item [matMenuTriggerFor]="categorySubMenu">
-    <mat-icon>category</mat-icon> Categories
+    <mat-icon>category</mat-icon>
+    Categories
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="productSubMenu">
+    <mat-icon>shopping_bag</mat-icon>
+    Products
   </button>
 </mat-menu>
 
+<!-- Users Submenu -->
 <mat-menu #userSubMenu="matMenu">
-  <button mat-menu-item (click)="navigate('/add-user')">
-    <mat-icon>person_add</mat-icon> Add User
+  <button mat-menu-item (click)="navigate('/users')">
+    <mat-icon>group</mat-icon>
+    View Users
   </button>
-  <button mat-menu-item (click)="navigate('/edit-user')">
-    <mat-icon>edit</mat-icon> Update User
-  </button>
-  <button mat-menu-item (click)="navigate('/delete-user')">
-    <mat-icon>delete</mat-icon> Delete User
+  <button mat-menu-item (click)="navigate('/register')">
+    <mat-icon>person_add</mat-icon>
+    Add User
   </button>
 </mat-menu>
 
+<!-- Categories Submenu -->
 <mat-menu #categorySubMenu="matMenu">
-  <button mat-menu-item (click)="navigate('/add-category')">
-    <mat-icon>add</mat-icon> Add Category
+  <button mat-menu-item (click)="navigate('/categories')">
+    <mat-icon>view_list</mat-icon>
+    View Categories
   </button>
-  <button mat-menu-item (click)="navigate('/edit-category')">
-    <mat-icon>edit</mat-icon> Update Category
+  <button mat-menu-item (click)="openAddCategoryDialog()">
+    <mat-icon>add</mat-icon>
+    Add Category
   </button>
 </mat-menu>
-<!-- </div> -->
-<!-- </div> -->
+
+<!-- Products Submenu -->
+<mat-menu #productSubMenu="matMenu">
+  <button mat-menu-item (click)="navigate('/products')">
+    <mat-icon>view_list</mat-icon>
+    View Products
+  </button>
+  <button mat-menu-item (click)="openAddProductDialog()">
+    <mat-icon>add</mat-icon>
+    Add Product
+  </button>
+</mat-menu>
+}

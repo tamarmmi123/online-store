@@ -16,7 +16,9 @@
     </button>
 
     @if(getUserRole() == "manager"){
-    <button>update</button>
-    <button>delete</button>
+    <div class="manager-buttons">
+        <button mat-raised-button color="primary" (click)="editProduct()">Update</button>
+        <button mat-raised-button color="warn" (click)="deleteProduct()">Delete</button>
+    </div>
     }
 </div>
