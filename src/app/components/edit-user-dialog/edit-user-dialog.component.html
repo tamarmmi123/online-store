@@ -1,0 +1,28 @@
+<h2 mat-dialog-title>Edit User</h2>
+<mat-dialog-content [formGroup]="editForm">
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="role">
+            <mat-option value="user">User</mat-option>
+            <mat-option value="manager">Manager</mat-option>
+        </mat-select>
+    </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="action-buttons">
+    <button mat-button (click)="dialogRef.close()">Cancel</button>
+    <button mat-flat-button color="primary" (click)="save()" [disabled]="editForm.invalid">
+        Save
+    </button>
+
+</mat-dialog-actions>

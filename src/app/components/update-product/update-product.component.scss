@@ -1,0 +1,35 @@
+.form {
+    margin: 3rem;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+:host ::ng-deep .mat-dialog-container {
+    padding: 24px 24px 16px;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+h1[mat-dialog-title] {
+    margin: 0 0 24px 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+[mat-dialog-actions] {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    gap: 8px;
+}
+
+button[mat-button] {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+button[mat-raised-button] {
+    min-width: 100px;
+}

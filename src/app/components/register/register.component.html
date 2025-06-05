@@ -1,0 +1,53 @@
+<form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>User Name</mat-label>
+        <input matInput [(ngModel)]="user.userName" name="userName" required #userName="ngModel">
+
+    </mat-form-field>
+    <div *ngIf="userName.invalid && userName.touched" class="error">User Name is required</div>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide() ? 'password' : 'text'" [(ngModel)]="user.password" name="password" required
+            #password="ngModel">
+        <button mat-icon-button matSuffix (click)="clickEvent($event)">
+            <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+    <div *ngIf="password.invalid && password.touched" class="error">Password is required</div>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>First Name</mat-label>
+        <input matInput [(ngModel)]="user.firstName" name="firstName">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput [(ngModel)]="user.lastName" name="lastName">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Phone Number</mat-label>
+        <input matInput [(ngModel)]="user.phoneNumber" name="phoneNumber">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label>
+        <input matInput [(ngModel)]="user.address" name="address">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Email Address</mat-label>
+        <input matInput [(ngModel)]="user.email" name="email" required email #email="ngModel">
+    </mat-form-field>
+    @if(email.invalid && email.touched){
+    <div class="error">Valid Email is required</div>
+    }
+
+    <p>{{errorMessage}}</p>
+    <div class="example-button-row">
+        <button mat-stroked-button type="submit">Register</button>
+    </div>
+
+    <p>Already have an account? <a (click)="login()">Login</a></p>
+</form>

@@ -1,0 +1,11 @@
+@if(allItems.length == 0 ){
+<p>No products found</p>
+}
+@else{
+<app-search-filter (categorySelected)="filterByCategory($event)" (filtersChanged)="filterByPrice($event)"
+     (sortOrderChanged)="onSortOrderChanged($event)" (searchChanged)="onSearchChanged($event)">
+</app-search-filter>
+<div class="items-container">
+     <app-item *ngFor="let item of items" [product]="item" class="clickable" (productDeleted)="removeProductFromList($event)"></app-item>
+</div>
+}

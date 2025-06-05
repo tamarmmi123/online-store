@@ -1,0 +1,30 @@
+<form *ngIf="editableUser" (ngSubmit)="onUpdate()" class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>First Name</mat-label>
+    <input matInput [(ngModel)]="editableUser!.firstName" name="firstName" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="editableUser!.lastName" name="lastName" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Phone Number</mat-label>
+    <input matInput [(ngModel)]="editableUser!.phoneNumber" name="phoneNumber" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Address</mat-label>
+    <input matInput [(ngModel)]="editableUser!.address" name="address" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="editableUser!.email" name="email" />
+  </mat-form-field>
+
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" type="submit">Update Profile</button>
+  </div>
+</form>

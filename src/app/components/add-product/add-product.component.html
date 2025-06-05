@@ -1,0 +1,39 @@
+<h1 mat-dialog-title>Add Product</h1>
+<form (ngSubmit)="addProduct()" class="addContainer">
+  <mat-form-field class="full-width">
+    <mat-label>Product Name</mat-label>
+    <input matInput [(ngModel)]="newProduct.productName" name="productName" required />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Description</mat-label>
+    <input matInput [(ngModel)]="newProduct.description" name="description" />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Category</mat-label>
+    <mat-select [(ngModel)]="newProduct.categoryId" name="categoryId" required>
+      <mat-option *ngFor="let c of categories" [value]="c.id">{{ c.name }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Cost</mat-label>
+    <input matInput type="number" [(ngModel)]="newProduct.cost" name="cost" required />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Quantity in Stock</mat-label>
+    <input matInput type="number" [(ngModel)]="newProduct.qtyInStock" name="qtyInStock" required />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Image Source</mat-label>
+    <input matInput [(ngModel)]="newProduct.imgSource" name="imgSource" />
+  </mat-form-field>
+
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Add</button>
+  </div>
+</form>

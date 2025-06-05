@@ -1,0 +1,29 @@
+<div *ngIf="shouldDisplayProduct()" class="product-card"
+    [ngClass]="{ 'out-of-stock': isOutOfStock() && userService.isManager() }">
+    <div class="product-card-clickable" (click)="navigateToProduct($event)">
+        <div>
+            <img [src]="'imgSrc/' + product.imgSource" class="product-image" alt="{{ product.productName }}" />
+        </div>
+        <div>
+            <h3>{{ product.productName }}</h3>
+            <p>{{ product.description }}</p>
+            <h4>{{ product.cost | currency: 'ILS' }}</h4>
+
+            <!-- Manager sees warning if out of stock -->
+            <p *ngIf="isOutOfStock() && userService.isManager()"
+                [ngStyle]="{ color: 'red', 'font-weight': 'bold', 'margin-top': '5px', display: 'flex', 'align-items': 'center', gap: '5px' }">
+                <mat-icon color="warn">warning</mat-icon>
+                Out of stock — please restock!
+            </p>
+        </div>
+    </div>
+
+    <button class="add-to-cart" (click)="addToCart()">
+        <span class="cart-icon">🛒</span> Add To Cart
+    </button>
+
+    <div *ngIf="userService.isManager()" class="manager-buttons">
+        <button mat-raised-button color="primary" (click)="editProduct()">Update</button>
+        <button mat-raised-button color="warn" (click)="deleteProduct()">Delete</button>
+    </div>
+</div>

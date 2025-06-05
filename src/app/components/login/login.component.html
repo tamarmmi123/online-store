@@ -1,0 +1,20 @@
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>User Name</mat-label>
+    <input matInput [(ngModel)]="userName" name="userName" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide() ? 'password' : 'text'" [(ngModel)]="password" name="password" required>
+    <button mat-icon-button matSuffix (click)="togglePassword($event)" [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="hide()">
+      <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <p *ngIf="errorMessage" style="color:red;">{{ errorMessage }}</p>
+
+  <button mat-raised-button color="primary" type="submit">Login</button>
+  <p>Don't have an account yet? <a (click)="register()">Register</a></p>
+</form>
