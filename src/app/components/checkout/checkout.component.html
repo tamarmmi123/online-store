@@ -50,7 +50,7 @@
     <mat-card-content>
       <h3 class="mat-title">Order Summary</h3>
       <p *ngFor="let item of cartItems">
-        {{ item.product.productName }} - {{ item.product.cost | currency:'ILS' }}
+        {{ item.product.productName }} - {{ item.product.cost | currency:'ILS' }} x{{item.quantity}}
       </p>
       <p><strong>Total: {{ total | currency:'ILS' }}</strong></p>
     </mat-card-content>

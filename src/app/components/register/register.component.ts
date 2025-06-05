@@ -37,7 +37,7 @@ export class RegisterComponent {
 
     this.userService.register(this.user).subscribe({
       next: (user) => {
-        this.router.navigate(['/login']);
+        this.router.navigate(['/products']);
       },
       error: (err) => {
         if (err.status === 409) {

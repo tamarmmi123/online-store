@@ -20,27 +20,40 @@ export class UserService {
     }
   }
 
-  private decodeTokenToUser(token: string): User {
-    const decoded: any = jwtDecode(token);
-    return {
-      id: +decoded['id'],
-      userName: decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'],
-      role: decoded['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'],
-      firstName: decoded['firstName'],
-      lastName: decoded['lastName'],
-      email: decoded['email'],
-      phoneNumber: decoded['phoneNumber'],
-      address: decoded['address'],
-      password: '',
-      orders: []
-    };
+  private decodeTokenToUser(token: string): User | null {
+    if (!token || token.split('.').length !== 3) {
+      console.warn('Invalid token:', token);
+      return null;
+    }
+
+    try {
+      const decoded: any = jwtDecode(token);
+
+      return {
+        id: +decoded['id'],
+        userName: decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'],
+        role: decoded['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'],
+        firstName: decoded['firstName'],
+        lastName: decoded['lastName'],
+        email: decoded['email'],
+        phoneNumber: decoded['phoneNumber'],
+        address: decoded['address'],
+        password: '',
+        orders: []
+      };
+    } catch (error) {
+      console.error('Error decoding token:', error);
+      return null;
+    }
   }
 
   register(user: User): Observable<User> {
     return this.httpClient.post<LoginResponse>(`${this.URL}/users`, user).pipe(
       tap(response => {
-        localStorage.setItem('token', response.token);
-        this.currentUser.next(response.user);
+        if (!this.isManager()) {
+          localStorage.setItem('token', response.token);
+          this.currentUser.next(response.user);
+        }
       }),
       map(response => response.user),
       catchError(error => {
@@ -100,5 +113,14 @@ export class UserService {
   isManager(): boolean {
     const user = this.getCurrentUser();
     return user?.role === 'manager';
+  }
+
+  // -------manager--------
+  getAllUsers(): Observable<User[]> {
+    return this.httpClient.get<User[]>(`${this.URL}/users`);
+  }
+
+  deleteUser(id: number): Observable<void> {
+    return this.httpClient.delete<void>(`${this.URL}/users/${id}`);
   }
 }

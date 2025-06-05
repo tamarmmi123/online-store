@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { EditUserDialogComponent } from '../edit-user-dialog/edit-user-dialog.component';
+import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-admin',
@@ -38,32 +39,59 @@ export class AdminComponent {
     }
   }
 
-  editUser(userId: number): void {
-    const user = this.dataSource.data.find(u => u.id === userId);
-    if (!user) return;
+  // editUser(userId: number): void {
+  //   const user = this.dataSource.data.find(u => u.id === userId);
+  //   if (!user) return;
 
-    const dialogRef = this.dialog.open(EditUserDialogComponent, {
-      width: '400px',
-      data: user
-    });
+  //   const dialogRef = this.dialog.open(EditUserDialogComponent, {
+  //     width: '400px',
+  //     data: user
+  //   });
 
-    dialogRef.afterClosed().subscribe((result: User | undefined) => {
-      if (result) {
-        this.userService.updateUser(result).subscribe(updated => {
-          Object.assign(user, updated); // update local table data
-        });
-      }
-    });
-
-  }
+  //   dialogRef.afterClosed().subscribe((result: User | undefined) => {
+  //     if (result) {
+  //       this.userService.updateUser(result).subscribe(updated => {
+  //         Object.assign(user, updated); // update local table data
+  //       });
+  //     }
+  //   });
+  // }
 
   deleteUser(id: number): void {
-    if (!confirm('Are you sure you want to delete this user?')) return;
+  //   if (!confirm('Are you sure you want to delete this user?')) return;
 
-    this.userService.deleteUser(id).subscribe(() => {
-      this.dataSource.data = this.dataSource.data.filter(user => user.id !== id);
-    });
-  }
+  //   this.userService.deleteUser(id).subscribe(() => {
+  //     this.dataSource.data = this.dataSource.data.filter(user => user.id !== id);
+  //   });
+  // }
+
+  const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+        data: {
+          title: 'Confirm Deletion',
+          message: `Are you sure you want to delete user?`
+        }
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        if (result) {
+          this.userService.deleteUser(id).subscribe({
+            next: () => {
+              console.log(`User with ID ${id} deleted successfully`);
+              // this.productDeleted.emit(id);
+            },
+            error: (err) => {
+              console.error('Error deleting user:', err);
+              this.dialog.open(ConfirmDialogComponent, {
+                data: {
+                  title: 'Delete Failed',
+                  message: 'An error occurred while deleting the user. Please try again.'
+                }
+              });
+            }
+          });
+        }
+      });
+}
 
 
 }

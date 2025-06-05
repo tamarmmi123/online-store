@@ -7,11 +7,12 @@ import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.compone
 import { MatDialog } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 
-// import { MatIcon } from '@angular/material/icon';
+import { MatIcon } from '@angular/material/icon';
+import { MatCardActions, MatCardContent, MatCardHeader, MatCardTitle } from '@angular/material/card';
 
 @Component({
   selector: 'app-shopping-cart',
-  imports: [CommonModule, MatButtonModule, /* MatIcon*/],
+  imports: [CommonModule, MatButtonModule, MatIcon, MatCardHeader, MatCardActions, MatCardContent, MatCardTitle],
   templateUrl: './shopping-cart.component.html',
   styleUrl: './shopping-cart.component.scss'
 })

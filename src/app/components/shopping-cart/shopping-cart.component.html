@@ -1,40 +1,53 @@
-@if (cartItems.length == 0) {
-<p>Your cart is empty</p>
-<a (click)="shop()">Continue Shopping</a>
-}
-@else {
-<p>
-    Subtotal ({{ getTotalItems() }} items): {{ getTotalCost().toFixed(2) | currency:'ILS' }}
-</p>
-<button mat-flat-button (click)="checkout()">Proceed to checkout</button>
+<div class="prodsContainer">
+    @if (cartItems.length == 0) {
+    <div class="empty-cart">
+        <mat-card-header>
+            <mat-icon color="warn">shopping_cart</mat-icon>
+            <mat-card-title>Your cart is empty</mat-card-title>
+        </mat-card-header>
 
-@for (i of cartItems; track i.product.id) {
-<div class="container">
-    <div class="image-wrapper">
-        <img [src]="'imgSrc/'+i.product.imgSource" class="product-image" alt="{{i.product.productName}}" />
+        <mat-card-content>
+            <p>Looks like you haven’t added anything yet.</p>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="shop()">Continue Shopping</button>
+        </mat-card-actions>
     </div>
-    <div class="details">
-        <div>
-            <p>{{ i.product.productName }}</p>
-            <p>{{ i.product.description }}</p>
-            <p>Price: {{ i.product.cost | currency:'ILS' }}</p>
-            <p>Quantity: {{ i.quantity }}</p>
-            <p>Total: {{ (i.product.cost * i.quantity).toFixed(2) | currency:'ILS' }}</p>
+    }
+
+    @else {
+    <p>
+        Subtotal ({{ getTotalItems() }} items): {{ getTotalCost().toFixed(2) | currency:'ILS' }}
+    </p>
+    <button mat-flat-button (click)="checkout()">Proceed to checkout</button>
+
+    @for (i of cartItems; track i.product.id) {
+    <div class="container">
+        <div class="image-wrapper">
+            <img [src]="'imgSrc/'+i.product.imgSource" class="product-image" alt="{{i.product.productName}}" />
         </div>
-        <div class="btns">
-            <div class="quantity-selector">
-                <button class="quantity-btn" (click)="decreaseQty(i.product)">-</button>
-                <span class="quantity-display">{{ i.quantity }}</span>
-                <button class="quantity-btn" (click)="increaseQty(i.product)">+</button>
+        <div class="details">
+            <div>
+                <p>{{ i.product.productName }}</p>
+                <p>{{ i.product.description }}</p>
+                <p>Price: {{ i.product.cost | currency:'ILS' }}</p>
+                <p>Quantity: {{ i.quantity }}</p>
+                <p>Total: {{ (i.product.cost * i.quantity).toFixed(2) | currency:'ILS' }}</p>
             </div>
-            <button mat-stroked-button color="warn" (click)="confirmRemoveProduct(i.product)">
-                Remove
-            </button>
-            <!-- <button mat-icon-button color="warn" (click)="removeItem(i.product)" matTooltip="Remove item">
-            <mat-icon>delete</mat-icon>
-        </button> -->
+            <div class="btns">
+                <div class="quantity-selector">
+                    <button class="quantity-btn" (click)="decreaseQty(i.product)">-</button>
+                    <span class="quantity-display">{{ i.quantity }}</span>
+                    <button class="quantity-btn" (click)="increaseQty(i.product)">+</button>
+                </div>
+                <button mat-stroked-button color="warn" (click)="confirmRemoveProduct(i.product)">
+                    Remove
+                </button>
+            </div>
         </div>
     </div>
+    }
+    }
+
 </div>
-}
-}

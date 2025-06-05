@@ -1,18 +1,18 @@
-<div class="filters-container">
-  <!-- search by category -->
-  <mat-form-field appearance="fill">
-    <mat-label>Filter by category</mat-label>
+<div class="filter-grid">
+  <!-- Category Filter -->
+  <mat-form-field appearance="outline">
+    <mat-label>Category</mat-label>
     <mat-select (selectionChange)="onSelectChange($event.value)">
-      <mat-option [value]="''">All Categories</mat-option>
+      <mat-option [value]="''">All</mat-option>
       <mat-option *ngFor="let category of categories" [value]="category.name">
         {{ category.name }}
       </mat-option>
     </mat-select>
   </mat-form-field>
 
-  <!-- Sort by price -->
-  <mat-form-field appearance="fill">
-    <mat-label>Sort by price</mat-label>
+  <!-- Sort Order -->
+  <mat-form-field appearance="outline">
+    <mat-label>Sort Price</mat-label>
     <mat-select [(value)]="sortOrder" (selectionChange)="onSortOrderChange()">
       <mat-option [value]="null">None</mat-option>
       <mat-option value="asc">Low to High</mat-option>
@@ -20,19 +20,20 @@
     </mat-select>
   </mat-form-field>
 
-  <!-- filter by price -->
-  <mat-form-field appearance="fill">
+  <!-- Min Price -->
+  <mat-form-field appearance="outline">
     <mat-label>Min Price</mat-label>
     <input matInput type="number" [(ngModel)]="minPrice" (ngModelChange)="emitFilters()" />
   </mat-form-field>
 
-  <mat-form-field appearance="fill">
+  <!-- Max Price -->
+  <mat-form-field appearance="outline">
     <mat-label>Max Price</mat-label>
     <input matInput type="number" [(ngModel)]="maxPrice" (ngModelChange)="emitFilters()" />
   </mat-form-field>
 
-  <!-- search -->
-  <mat-form-field appearance="fill" class="search-field">
+  <!-- Search -->
+  <mat-form-field appearance="outline" class="search-bar">
     <mat-label>Search</mat-label>
     <mat-icon matPrefix>search</mat-icon>
     <input matInput type="text" [(ngModel)]="searchQuery" (ngModelChange)="onSearchChange()" placeholder="Type to search..." />

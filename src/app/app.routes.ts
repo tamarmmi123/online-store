@@ -10,6 +10,8 @@ import { UserComponent } from './components/user/user.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
 import { OrdersByIdComponent } from './components/orders-by-id/orders-by-id.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 
 export const routes: Routes = [
@@ -23,10 +25,7 @@ export const routes: Routes = [
      { path: 'product/:id', component: ProductPageComponent },
      { path: 'checkout', component: CheckoutComponent },
      { path: 'orders/by-userId/:id', component: OrdersByIdComponent },
-     {
-          path: 'categories',
-          loadComponent: () => import('./components/categories/categories.component').then(m => m.CategoriesComponent),
-          canActivate: [AuthGuard]
-     },
+     { path: 'users', component: AdminComponent },
+     { path: 'categories', component: CategoriesComponent },
      { path: '**', component: NotFoundComponent }
 ];

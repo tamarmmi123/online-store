@@ -11,11 +11,12 @@ import { CategoryService } from '../../services/category.service';
 import { UpdateProductComponent } from '../update-product/update-product.component';
 import { EventEmitter, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 
 
 @Component({
   selector: 'app-item',
-  imports: [CommonModule, MatButtonModule],
+  imports: [CommonModule, MatButtonModule, MatIcon],
   templateUrl: './item.component.html',
   styleUrl: './item.component.scss'
 })
@@ -26,7 +27,10 @@ export class ItemComponent {
   constructor(private categoryService: CategoryService, public userService: UserService, private productService: ProductService, private router: Router, private cartService: CartService, private dialog: MatDialog) { }
 
   addToCart() {
-    this.cartService.addToCart(this.product, this.quantity);
+    if (!this.userService.isLoggedIn())
+      this.router.navigate(['login'])
+    else
+      this.cartService.addToCart(this.product, this.quantity);
   }
 
   navigateToProduct(event: MouseEvent) {
@@ -45,7 +49,13 @@ export class ItemComponent {
     return this.userService.getUserRole();
   }
 
+  isOutOfStock(): boolean {
+    return this.product.qtyInStock === 0;
+  }
 
+  shouldDisplayProduct(): boolean {
+    return this.product.qtyInStock > 0 || this.userService.isManager();
+  }
 
   getToken() {
     return this.userService.getToken();
