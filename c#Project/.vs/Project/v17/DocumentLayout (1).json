@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\year 2\\Web API\\Project\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|d:\\year 2\\web api\\project\\project\\project.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|solutionrelative:project.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BC81F59-3AEB-4585-B462-E69F82FA358E}|Project.Service\\Project.Service.csproj|d:\\year 2\\web api\\project\\project\\project.service\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BC81F59-3AEB-4585-B462-E69F82FA358E}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D292F23E-B8D1-4CD6-81A4-5AC9C7BF3266}|Project.Data\\Project.Data.csproj|d:\\year 2\\web api\\project\\project\\project.data\\data\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D292F23E-B8D1-4CD6-81A4-5AC9C7BF3266}|Project.Data\\Project.Data.csproj|solutionrelative:project.data\\data\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/mydb/True/SqlTable/dbo.products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|d:\\year 2\\web api\\project\\project\\project.api\\middlewares\\validateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|solutionrelative:project.api\\middlewares\\validateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|d:\\year 2\\web api\\project\\project\\project.api\\middlewares\\myextentionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|solutionrelative:project.api\\middlewares\\myextentionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|d:\\year 2\\web api\\project\\project\\project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|solutionrelative:project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|d:\\year 2\\web api\\project\\project\\project.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0A1F48-4CB7-4217-B732-11CD962B42A2}|Project.Api\\Project.Api.csproj|solutionrelative:project.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 317,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\year 2\\Web API\\Project\\Project\\Project.Service\\Service\\ProductService.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Service\\ProductService.cs",
+              "ToolTip": "D:\\year 2\\Web API\\Project\\Project\\Project.Service\\Service\\ProductService.cs",
+              "RelativeToolTip": "Project.Service\\Service\\ProductService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:50:12.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductData.cs",
+              "DocumentMoniker": "D:\\year 2\\Web API\\Project\\Project\\Project.Data\\Data\\ProductData.cs",
+              "RelativeDocumentMoniker": "Project.Data\\Data\\ProductData.cs",
+              "ToolTip": "D:\\year 2\\Web API\\Project\\Project\\Project.Data\\Data\\ProductData.cs",
+              "RelativeToolTip": "Project.Data\\Data\\ProductData.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:49:45.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Project.Api\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Project.Api\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAC8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:38:48.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.products.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/mydb/True/SqlTable/dbo.products.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/mydb/True/SqlTable/dbo.products.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-03T11:35:23.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ValidateProduct.cs",
+              "DocumentMoniker": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Middlewares\\ValidateProduct.cs",
+              "RelativeDocumentMoniker": "Project.Api\\Middlewares\\ValidateProduct.cs",
+              "ToolTip": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Middlewares\\ValidateProduct.cs",
+              "RelativeToolTip": "Project.Api\\Middlewares\\ValidateProduct.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T08:26:55.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyExtentionMiddleware.cs",
+              "DocumentMoniker": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Middlewares\\MyExtentionMiddleware.cs",
+              "RelativeDocumentMoniker": "Project.Api\\Middlewares\\MyExtentionMiddleware.cs",
+              "ToolTip": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Middlewares\\MyExtentionMiddleware.cs",
+              "RelativeToolTip": "Project.Api\\Middlewares\\MyExtentionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T08:26:54.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Project.Api\\Program.cs",
+              "ToolTip": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Program.cs",
+              "RelativeToolTip": "Project.Api\\Program.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAqwGkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T20:56:36.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Project.Api\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\year 2\\Web API\\Project\\Project\\Project.Api\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Project.Api\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T20:37:54.296Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

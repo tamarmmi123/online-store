@@ -1,0 +1,102 @@
+C:\Users\User\Downloads\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.deps.json
+C:\Users\User\Downloads\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.dll
+C:\Users\User\Downloads\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.pdb
+C:\Users\User\Downloads\Project\Project\Project.Service\bin\Debug\net8.0\Project.Core.dll
+C:\Users\User\Downloads\Project\Project\Project.Service\bin\Debug\net8.0\Project.Data.dll
+C:\Users\User\Downloads\Project\Project\Project.Service\bin\Debug\net8.0\Project.Data.pdb
+C:\Users\User\Downloads\Project\Project\Project.Service\bin\Debug\net8.0\Project.Core.pdb
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfo.cs
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\Project..A91D4F4B.Up2Date
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.dll
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\refint\Project.Service.dll
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.pdb
+C:\Users\User\Downloads\Project\Project\Project.Service\obj\Debug\net8.0\ref\Project.Service.dll
+E:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.deps.json
+E:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.dll
+E:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.pdb
+E:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Core.dll
+E:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Data.dll
+E:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Data.pdb
+E:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Core.pdb
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.AssemblyReference.cache
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfoInputs.cache
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfo.cs
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.CoreCompileInputs.cache
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project..A91D4F4B.Up2Date
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.dll
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\refint\Project.Service.dll
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.pdb
+E:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\ref\Project.Service.dll
+D:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.deps.json
+D:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.dll
+D:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Service.pdb
+D:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Core.dll
+D:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Data.dll
+D:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Data.pdb
+D:\year 2\Web API\Project\Project\Project.Service\bin\Debug\net8.0\Project.Core.pdb
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.AssemblyReference.cache
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfoInputs.cache
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfo.cs
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.CoreCompileInputs.cache
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project..A91D4F4B.Up2Date
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.dll
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\refint\Project.Service.dll
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\Project.Service.pdb
+D:\year 2\Web API\Project\Project\Project.Service\obj\Debug\net8.0\ref\Project.Service.dll
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\Project.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfo.cs
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\Project.Service.dll
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\Project.Service.pdb
+C:\Users\User\Desktop\Project\Project.Service\bin\Debug\net8.0\Project.Service.deps.json
+C:\Users\User\Desktop\Project\Project.Service\bin\Debug\net8.0\Project.Service.dll
+C:\Users\User\Desktop\Project\Project.Service\bin\Debug\net8.0\Project.Service.pdb
+C:\Users\User\Desktop\Project\Project.Service\bin\Debug\net8.0\Project.Core.dll
+C:\Users\User\Desktop\Project\Project.Service\bin\Debug\net8.0\Project.Data.dll
+C:\Users\User\Desktop\Project\Project.Service\bin\Debug\net8.0\Project.Data.pdb
+C:\Users\User\Desktop\Project\Project.Service\bin\Debug\net8.0\Project.Core.pdb
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\Project..A91D4F4B.Up2Date
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\refint\Project.Service.dll
+C:\Users\User\Desktop\Project\Project.Service\obj\Debug\net8.0\ref\Project.Service.dll
+E:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Service.deps.json
+E:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Service.dll
+E:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Service.pdb
+E:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Core.dll
+E:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Data.dll
+E:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Data.pdb
+E:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Core.pdb
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.AssemblyReference.cache
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfoInputs.cache
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfo.cs
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.CoreCompileInputs.cache
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project..A91D4F4B.Up2Date
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.dll
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\refint\Project.Service.dll
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.pdb
+E:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\ref\Project.Service.dll
+D:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Service.deps.json
+D:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Service.dll
+D:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Service.pdb
+D:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Core.dll
+D:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Data.dll
+D:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Data.pdb
+D:\year 2\Web API\Project\Project.Service\bin\Debug\net8.0\Project.Core.pdb
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.AssemblyReference.cache
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfoInputs.cache
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.AssemblyInfo.cs
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.csproj.CoreCompileInputs.cache
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project..A91D4F4B.Up2Date
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.dll
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\refint\Project.Service.dll
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\Project.Service.pdb
+D:\year 2\Web API\Project\Project.Service\obj\Debug\net8.0\ref\Project.Service.dll

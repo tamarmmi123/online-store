@@ -1,0 +1,102 @@
+C:\Users\User\Downloads\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.deps.json
+C:\Users\User\Downloads\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.runtimeconfig.json
+C:\Users\User\Downloads\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.dll
+C:\Users\User\Downloads\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.pdb
+C:\Users\User\Downloads\Project\Project\Project.Data\bin\Debug\net8.0\Project.Core.dll
+C:\Users\User\Downloads\Project\Project\Project.Data\bin\Debug\net8.0\Project.Core.pdb
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfo.cs
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project..C3DBF55B.Up2Date
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.dll
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\refint\Project.Data.dll
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.pdb
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.genruntimeconfig.cache
+C:\Users\User\Downloads\Project\Project\Project.Data\obj\Debug\net8.0\ref\Project.Data.dll
+E:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.deps.json
+E:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.runtimeconfig.json
+E:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.dll
+E:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.pdb
+E:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Core.dll
+E:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Core.pdb
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.AssemblyReference.cache
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfoInputs.cache
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfo.cs
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.CoreCompileInputs.cache
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project..C3DBF55B.Up2Date
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.dll
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\refint\Project.Data.dll
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.pdb
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.genruntimeconfig.cache
+E:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\ref\Project.Data.dll
+D:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.deps.json
+D:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.runtimeconfig.json
+D:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.dll
+D:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Data.pdb
+D:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Core.dll
+D:\year 2\Web API\Project\Project\Project.Data\bin\Debug\net8.0\Project.Core.pdb
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.AssemblyReference.cache
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfoInputs.cache
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfo.cs
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.CoreCompileInputs.cache
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project..C3DBF55B.Up2Date
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.dll
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\refint\Project.Data.dll
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.pdb
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\Project.Data.genruntimeconfig.cache
+D:\year 2\Web API\Project\Project\Project.Data\obj\Debug\net8.0\ref\Project.Data.dll
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\refint\Project.Data.dll
+C:\Users\User\Desktop\Project\Project.Data\bin\Debug\net8.0\Project.Data.deps.json
+C:\Users\User\Desktop\Project\Project.Data\bin\Debug\net8.0\Project.Data.runtimeconfig.json
+C:\Users\User\Desktop\Project\Project.Data\bin\Debug\net8.0\Project.Data.dll
+C:\Users\User\Desktop\Project\Project.Data\bin\Debug\net8.0\Project.Data.pdb
+C:\Users\User\Desktop\Project\Project.Data\bin\Debug\net8.0\Project.Core.dll
+C:\Users\User\Desktop\Project\Project.Data\bin\Debug\net8.0\Project.Core.pdb
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project..C3DBF55B.Up2Date
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project.Data.dll
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project.Data.pdb
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\Project.Data.genruntimeconfig.cache
+C:\Users\User\Desktop\Project\Project.Data\obj\Debug\net8.0\ref\Project.Data.dll
+E:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Data.deps.json
+E:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Data.runtimeconfig.json
+E:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Data.dll
+E:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Data.pdb
+E:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Core.dll
+E:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Core.pdb
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.AssemblyReference.cache
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfoInputs.cache
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfo.cs
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.CoreCompileInputs.cache
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project..C3DBF55B.Up2Date
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.dll
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\refint\Project.Data.dll
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.pdb
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.genruntimeconfig.cache
+E:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\ref\Project.Data.dll
+D:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Data.deps.json
+D:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Data.runtimeconfig.json
+D:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Data.dll
+D:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Data.pdb
+D:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Core.dll
+D:\year 2\Web API\Project\Project.Data\bin\Debug\net8.0\Project.Core.pdb
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.AssemblyReference.cache
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfoInputs.cache
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.AssemblyInfo.cs
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.csproj.CoreCompileInputs.cache
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project..C3DBF55B.Up2Date
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.dll
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\refint\Project.Data.dll
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.pdb
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\Project.Data.genruntimeconfig.cache
+D:\year 2\Web API\Project\Project.Data\obj\Debug\net8.0\ref\Project.Data.dll

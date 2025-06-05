@@ -1,0 +1,71 @@
+C:\Users\User\Downloads\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.deps.json
+C:\Users\User\Downloads\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.dll
+C:\Users\User\Downloads\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.pdb
+C:\Users\User\Downloads\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfo.cs
+C:\Users\User\Downloads\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.dll
+C:\Users\User\Downloads\Project\Project\Project.Core\obj\Debug\net8.0\refint\Project.Core.dll
+C:\Users\User\Downloads\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.pdb
+C:\Users\User\Downloads\Project\Project\Project.Core\obj\Debug\net8.0\ref\Project.Core.dll
+E:\year 2\Web API\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.deps.json
+E:\year 2\Web API\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.dll
+E:\year 2\Web API\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.pdb
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.AssemblyReference.cache
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfoInputs.cache
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfo.cs
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.CoreCompileInputs.cache
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.dll
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\refint\Project.Core.dll
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.pdb
+E:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\ref\Project.Core.dll
+D:\year 2\Web API\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.deps.json
+D:\year 2\Web API\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.dll
+D:\year 2\Web API\Project\Project\Project.Core\bin\Debug\net8.0\Project.Core.pdb
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.AssemblyReference.cache
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfoInputs.cache
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfo.cs
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.CoreCompileInputs.cache
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.dll
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\refint\Project.Core.dll
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\Project.Core.pdb
+D:\year 2\Web API\Project\Project\Project.Core\obj\Debug\net8.0\ref\Project.Core.dll
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\Project.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfo.cs
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project\Project.Core\bin\Debug\net8.0\Project.Core.deps.json
+C:\Users\User\Desktop\Project\Project.Core\bin\Debug\net8.0\Project.Core.dll
+C:\Users\User\Desktop\Project\Project.Core\bin\Debug\net8.0\Project.Core.pdb
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\Project.Core.dll
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\refint\Project.Core.dll
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\Project.Core.pdb
+C:\Users\User\Desktop\Project\Project.Core\obj\Debug\net8.0\ref\Project.Core.dll
+E:\year 2\Web API\Project\Project.Core\bin\Debug\net8.0\Project.Core.deps.json
+E:\year 2\Web API\Project\Project.Core\bin\Debug\net8.0\Project.Core.dll
+E:\year 2\Web API\Project\Project.Core\bin\Debug\net8.0\Project.Core.pdb
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.AssemblyReference.cache
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfoInputs.cache
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfo.cs
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.CoreCompileInputs.cache
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.dll
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\refint\Project.Core.dll
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.pdb
+E:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\ref\Project.Core.dll
+D:\year 2\Web API\Project\Project.Core\bin\Debug\net8.0\Project.Core.deps.json
+D:\year 2\Web API\Project\Project.Core\bin\Debug\net8.0\Project.Core.dll
+D:\year 2\Web API\Project\Project.Core\bin\Debug\net8.0\Project.Core.pdb
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.AssemblyReference.cache
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfoInputs.cache
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.AssemblyInfo.cs
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.CoreCompileInputs.cache
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.dll
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\refint\Project.Core.dll
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\Project.Core.pdb
+D:\year 2\Web API\Project\Project.Core\obj\Debug\net8.0\ref\Project.Core.dll
